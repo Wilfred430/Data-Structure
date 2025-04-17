@@ -1,7 +1,7 @@
 #include <cassert>
 using namespace std;
 
-#include "List.h"
+#include "List_statics.h"
 
 List::List() : mysize(0)
 {
@@ -78,8 +78,6 @@ ostream&operator<<(ostream& out, const List& L)
 
 //--- Program to test List class.
 #include <iostream>
-using namespace std;
-#include "List.h"
 int main()
 {
     // Test the class constructor
