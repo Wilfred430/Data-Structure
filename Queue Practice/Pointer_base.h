@@ -181,8 +181,8 @@ void Queue::enqueue(const QueueElement &value)
         myFront = myBack = newptr;
     else
     {
-        myBack->next = newptr;
-        myBack = newptr;
+        myBack->next = newptr; // refresh nullptr to newptr
+        myBack = newptr; // refresh myback
     }
 }
 //--- Definition of display()
