@@ -100,7 +100,7 @@ private:
         myBack;          // pointer to back of queue
 }; // end of class declaration
 
-#endif LQUEUE
+#endif
 
 /*--- LQueue.cpp ----------------------------------------------------------
 This file implements LQueue member functions.
