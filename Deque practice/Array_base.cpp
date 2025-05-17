@@ -1,11 +1,11 @@
 #include <iostream>
-#include <deque>
-#include <iterator>
+#include<iterator>
+#include "Array_base.h"
 using namespace std;
 
 int main()
 {
-    deque<int> q;
+    Deque<int> q;
 
     for (int i = 1; i <= 10; i++)
     {
@@ -17,10 +17,7 @@ int main()
         q.push_front(i);
     }
 
-    for (deque<int>::iterator it = q.begin(); it != q.end(); it++)
-    {
-        cout << *it << " ";
-    }
+    q.Display();
 
     cout << endl;
 
@@ -34,10 +31,7 @@ int main()
         q.pop_front();
     }
 
-    for (deque<int>::iterator it = q.begin(); it != q.end(); it++)
-    {
-        cout << *it << " ";
-    }
+    q.Display();
 
     cout << endl;
 
