@@ -41,5 +41,7 @@ int main()
 
     cout << endl;
 
+    cout << q.max_size() << endl;
+
     return 0;
 }
